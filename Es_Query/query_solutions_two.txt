@@ -5,6 +5,10 @@ FROM `students`
 GROUP BY YEAR(`students`.`enrolment_date`);
 
 Traccia 2: Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+SELECT COUNT(*) AS numero_insegnanti,`teachers`.`office_address` AS via_ufficio
+FROM `teachers`
+GROUP BY `teachers`.`office_address`;
+
 
 Traccia 3: Calcolare la media dei voti di ogni appello d'esame
 
